@@ -463,7 +463,7 @@ class CertificateGen(object):
 
         #paragraph_string = "Issued {0}".format(self.issued_date)
         #paragraph_string = "{0}".format(self.issued_date)
-        paragraph_string = "Santiago de Chile, a 14 de septiembre de 2016".format(self.issued_date)
+        paragraph_string = "Santiago de Chile, a 4 de noviembre de 2016".format(self.issued_date)
 
         # Right justified so we compute the width
         width = stringWidth(
@@ -562,37 +562,38 @@ class CertificateGen(object):
 
         # Course name
 
-        # styleOpenSans.fontName = 'OpenSans-BoldItalic'
-        if 'PH207x' in self.course:
-            styleOpenSans.fontSize = 18
-            styleOpenSans.leading = 21
-        elif '4.01x' in self.course:
-            styleOpenSans.fontSize = 20
-            #styleOpenSans.leading = 10
-            styleOpenSans.leading = 21
-        elif 'Stat2.1x' in self.course:
-            styleOpenSans.fontSize = 20
-            #styleOpenSans.leading = 10
-            styleOpenSans.leading = 21
-        elif 'CS191x' in self.course:
-            styleOpenSans.fontSize = 20
-            #styleOpenSans.leading = 10
-            styleOpenSans.leading = 21
-        elif '6.00x' in self.course:
-            styleOpenSans.fontSize = 20
-            styleOpenSans.leading = 21
-        elif 'PH278x' in self.course:
-            styleOpenSans.fontSize = 20
-            #styleOpenSans.leading = 10
-            styleOpenSans.leading = 21
-        else:
-            styleOpenSans.fontSize = 24
-            #styleOpenSans.leading = 10
-            styleOpenSans.leading = 21
+# styleOpenSans.fontName = 'OpenSans-BoldItalic'
+#        if 'PH207x' in self.course:
+#            styleOpenSans.fontSize = 18
+#            styleOpenSans.leading = 21
+#        elif '4.01x' in self.course:
+#            styleOpenSans.fontSize = 20
+#            #styleOpenSans.leading = 10
+#            styleOpenSans.leading = 21
+#        elif 'Stat2.1x' in self.course:
+#            styleOpenSans.fontSize = 20
+#            #styleOpenSans.leading = 10
+#            styleOpenSans.leading = 21
+#        elif 'CS191x' in self.course:
+#            styleOpenSans.fontSize = 20
+#            #styleOpenSans.leading = 10
+#            styleOpenSans.leading = 21
+#        elif '6.00x' in self.course:
+#            styleOpenSans.fontSize = 20
+#            styleOpenSans.leading = 21
+#        elif 'PH278x' in self.course:
+#            styleOpenSans.fontSize = 20
+#            #styleOpenSans.leading = 10
+#            styleOpenSans.leading = 21
+#        else:
+#            styleOpenSans.fontSize = 24
+#            #styleOpenSans.leading = 10
+#            styleOpenSans.leading = 21
+        styleOpenSans.fontSize = 18      
         styleOpenSans.textColor = colors.Color(
             0, 0.624, 0.886)
         styleOpenSans.alignment = TA_CENTER
-        styleOpenSans.leading = 21
+        styleOpenSans.leading = 14
 
         #paragraph_string = u"<b style='line-height: 2'><i>{0}: {1}</i></b>".format(
         #    self.course, self.long_course.decode('utf-8'))
@@ -626,7 +627,7 @@ class CertificateGen(object):
         #                   "<b>{1}</b> through <b>edX</b>.".format(
         #                       self.org, self.long_org.decode('utf-8'))
 
-        paragraph_string = "realizado entre el 2 de agosto de 2016 y el 13 de septiembre de 2016<br/><br/>" \
+        paragraph_string = "realizado entre el 27 de septiembre y el 3 de noviembre de 2016<br/><br/>" \
                            "en la plataforma UAbierta de la Universidad de Chile".format(
                                self.org, self.long_org.decode('utf-8'))
 
