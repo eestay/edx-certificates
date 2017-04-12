@@ -463,7 +463,11 @@ class CertificateGen(object):
 
         #paragraph_string = "Issued {0}".format(self.issued_date)
         #paragraph_string = "{0}".format(self.issued_date)
+<<<<<<< HEAD
         paragraph_string = "Santiago de Chile, a 1 de marzo de 2017".format(self.issued_date)
+=======
+        paragraph_string = "Santiago de Chile, a 10 de abril de 2017".format(self.issued_date)
+>>>>>>> 9a6e24b6a20c835d3c2d6b84f1ad9f7e496e964c
 
         # Right justified so we compute the width
         width = stringWidth(
@@ -598,10 +602,16 @@ class CertificateGen(object):
         #paragraph_string = u"<b style='line-height: 2'><i>{0}: {1}</i></b>".format(
         #    self.course, self.long_course.decode('utf-8'))
         #!important course name
+<<<<<<< HEAD
         #paragraph_string = u"<b style='line-height: 2'><i>{1}</i></b>".format(
         #    self.course, self.long_course.decode('utf-8'))
         paragraph_string = u"<b style='line-height: 2'><i>Nuevas miradas sobre género y etnicidad IV</i></b>".format(
+=======
+        paragraph_string = u"<b style='line-height: 2'><i>{1}</i></b>".format(
+>>>>>>> 9a6e24b6a20c835d3c2d6b84f1ad9f7e496e964c
             self.course, self.long_course.decode('utf-8'))
+        #paragraph_string = u"<b style='line-height: 2'><i>Arte y Espacio Público</i></b>".format(
+        #    self.course, self.long_course.decode('utf-8'))
         paragraph = Paragraph(paragraph_string, styleOpenSans)
         # paragraph.wrapOn(c, WIDTH * mm, HEIGHT * mm)
         if 'PH207x' in self.course:
@@ -630,7 +640,11 @@ class CertificateGen(object):
         #                   "<b>{1}</b> through <b>edX</b>.".format(
         #                       self.org, self.long_org.decode('utf-8'))
 
+<<<<<<< HEAD
         paragraph_string = "realizado entre el 3 de enero y el 3 de febrero de 2017<br/><br/>" \
+=======
+        paragraph_string = "realizado entre el 7 de marzo y el 10 de abril de 2017<br/><br/>" \
+>>>>>>> 9a6e24b6a20c835d3c2d6b84f1ad9f7e496e964c
                            "en la plataforma UAbierta de la Universidad de Chile".format(
                                self.org, self.long_org.decode('utf-8'))
 
