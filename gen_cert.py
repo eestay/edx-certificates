@@ -463,7 +463,7 @@ class CertificateGen(object):
 
         #paragraph_string = "Issued {0}".format(self.issued_date)
         #paragraph_string = "{0}".format(self.issued_date)
-        paragraph_string = "Santiago de Chile, a 7 de noviembre de 2017".format(self.issued_date)
+        paragraph_string = "Santiago de Chile, a 16 de noviembre de 2017".format(self.issued_date)
 
         # Right justified so we compute the width
         width = stringWidth(
@@ -598,7 +598,9 @@ class CertificateGen(object):
         #paragraph_string = u"<b style='line-height: 2'><i>{0}: {1}</i></b>".format(
         #    self.course, self.long_course.decode('utf-8'))
         #!important course name
-        paragraph_string = u"<b style='line-height: 2'><i>{1}</i></b>".format(
+        #paragraph_string = u"<b style='line-height: 2'><i>{1}</i></b>".format(
+        #    self.course, self.long_course.decode('utf-8'))
+        paragraph_string = u"<b style='line-height: 2'><i>Innovación para la educación en ciencia y tecnología II</i></b>".format(
             self.course, self.long_course.decode('utf-8'))
         #paragraph_string = u"<b style='line-height: 2'><i>De la desnutrición a la obesidad: un problema de alimentación</i></b>".format(
         #    self.course, self.long_course.decode('utf-8'))
@@ -630,7 +632,7 @@ class CertificateGen(object):
         #                   "<b>{1}</b> through <b>edX</b>.".format(
         #                       self.org, self.long_org.decode('utf-8'))
 
-        paragraph_string = "realizado entre el 3 de octubre y el 6 de noviembre de 2017<br/><br/>" \
+        paragraph_string = "realizado entre el 10 de octubre y el 14 de noviembre de 2017<br/><br/>" \
                            "en la plataforma UAbierta de la Universidad de Chile".format(
                                self.org, self.long_org.decode('utf-8'))
 
